@@ -20,7 +20,7 @@ Step 2: wget https://raw.githubusercontent.com/J3sven/wayland-cursor-theme-utili
 
 Step 3: ./cursor-utility.sh
 
-### 4 ### Display layout and Keyboard Layout ###
+### 4 ### Display layout and Keyboard Layout and making Noctalia v4 to an auostart Application ###
 
 mkdir -p ~/.config/labwc && echo 'setxkbmap de; qs -c noctalia-shell &; wlr-randr --output DP-1 --mode 2560x1440@179.959000 --scale 1 --pos 1440,560 --output HDMI-A-1 --mode 2560x1440@59.951000 --transform 90 --scale 1 --pos 0,0' > ~/.config/labwc/autostart && chmod +x ~/.config/labwc/autostart
 
