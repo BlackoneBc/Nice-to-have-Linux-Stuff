@@ -59,10 +59,5 @@ Test before reboot!!!
 
 #### 9. Installing Spicetify
 
-    sudo pacman -S unzip
-    curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
-    echo "spotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/" > ~/.config/spicetify/config-xpui.ini && echo "prefs_path = /home/lennart/.var/app/com.spotify.Client/config/spotify/prefs" >> ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && ~/.spicetify/spicetify apply
-    mkdir -p ~/.config/spicetify && echo "[Settings]" > ~/.config/spicetify/config-xpui.ini && echo "spotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/" >> ~/.config/spicetify/config-xpui.ini && echo "prefs_path = /home/lennart/.var/app/com.spotify.Client/config/spotify/prefs" >> ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && ~/.spicetify/spicetify apply
-
-
+    sudo pacman -S --needed unzip && curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s -- --no-marketplace && mkdir -p ~/.config/spicetify && printf "[Settings]\nspotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/\nprefs_path = /home/$USER/.var/app/com.spotify.Client/config/spotify/prefs\n" > ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && bash <(curl -sSL https://raw.githubusercontent.com/spicetify/marketplace/main/install.sh) -y && ~/.spicetify/spicetify backup apply && ~/.spicetify/spicetify apply
 
