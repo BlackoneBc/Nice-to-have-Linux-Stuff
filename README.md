@@ -56,26 +56,9 @@ Test before reboot!!!
 
     flatpak install -y com.brave.Browser com.github.IsmaelMartinez.teams_for_linux com.heroicgameslauncher.hgl com.jeffser.Alpaca com.lunarclient.LunarClient com.nuclearplayer.Nuclear com.rtosta.zapzap com.spotify.Client com.valvesoftware.Steam dev.vencord.Vesktop io.github.Geocld.PeaSyo4Desk io.github.ecotubehq.player io.github.revisto.drum-machine io.github.ungoogled_software.ungoogled_chromium io.gitlab.adhami3310.Impression io.missioncenter.MissionCenter org.bluej.BlueJ org.gnome.Decibels org.gnome.Showtime org.gnome.TextEditor org.onlyoffice.desktopeditors org.prismlauncher.PrismLauncher org.videolan.VLC 
 
-#### 9. Installing Spicetify
+### 9. Installing Spicetify
 
     sudo pacman -S --needed unzip && curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s -- --no-marketplace && mkdir -p ~/.config/spicetify && printf "[Settings]\nspotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/\nprefs_path = /home/$USER/.var/app/com.spotify.Client/config/spotify/prefs\n" > ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && bash <(curl -sSL https://raw.githubusercontent.com/spicetify/marketplace/main/install.sh) -y && ~/.spicetify/spicetify backup apply && ~/.spicetify/spicetify apply
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
