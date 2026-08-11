@@ -61,6 +61,8 @@ Test before reboot!!!
 
     sudo pacman -S unzip
     curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh
+    echo "spotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/" > ~/.config/spicetify/config-xpui.ini && echo "prefs_path = /home/lennart/.var/app/com.spotify.Client/config/spotify/prefs" >> ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && ~/.spicetify/spicetify apply
+    mkdir -p ~/.config/spicetify && echo "[Settings]" > ~/.config/spicetify/config-xpui.ini && echo "spotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/" >> ~/.config/spicetify/config-xpui.ini && echo "prefs_path = /home/lennart/.var/app/com.spotify.Client/config/spotify/prefs" >> ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && ~/.spicetify/spicetify apply
 
 
 
