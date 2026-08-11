@@ -66,7 +66,7 @@ Test before reboot!!!
 
 
 
-
+All in one:
 
     #!/bin/bash
     set -e
