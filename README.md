@@ -28,5 +28,10 @@ yay -S noctalia-shell
 
 mkdir -p ~/.config/labwc && echo 'setxkbmap de; qs -c noctalia-shell &; wlr-randr --output DP-1 --mode 2560x1440@179.959000 --scale 1 --pos 1440,560 --output HDMI-A-1 --mode 2560x1440@59.951000 --transform 90 --scale 1 --pos 0,0' > ~/.config/labwc/autostart && chmod +x ~/.config/labwc/autostart
 
+### 6 ### installing a Wallpaper Collection /Dokumente/Wallpaper ###
+
+Step 1: sudo pacman -S git-lfs && git lfs install
+Step 2: mkdir -p ~/Dokumente/Wallpaper && git clone https://github.com/BlackoneBc/walls-catppuccin-mocha.git && cd walls-catppuccin-mocha && git lfs install && git lfs pull && cp *.png *.jpg ~/Dokumente/Wallpaper/ && cd .. && rm -rf walls-catppuccin-mocha
+
 
 
