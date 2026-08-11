@@ -44,5 +44,10 @@ Paru
         cd .. && \
         rm -rf walls-catppuccin-mocha
 
+### 7. Installing and activating a SDDM Theme 
+
+    yay -S sddm-silent-theme
+    "echo -e '[General]\nInputMethod=qtvirtualkeyboard\nGreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/silent/components/,QT_IM_MODULE=qtvirtualkeyboard\n\n[Theme]\nCurrent=silent' > /etc/sddm.conf"
+    
 
 
