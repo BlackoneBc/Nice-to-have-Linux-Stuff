@@ -12,9 +12,8 @@ Paru
 
 ### 2. installing Flatpak and Gnome Software 
 
-    sudo pacman -S flatpak gnome-software
+    sudo pacman -S flatpak gnome-software gnome-software-plugin-flatpak
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    gnome-software --replace &
 
 ### 3. installing Bibata Cursor 
 
