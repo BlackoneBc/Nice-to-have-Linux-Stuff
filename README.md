@@ -1,6 +1,6 @@
 # Nice-to-have-Linux-Stuff
 
-1. installing YAY and PARU 
+### 1. installing YAY and PARU 
 
 YAY
     
