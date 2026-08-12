@@ -108,4 +108,16 @@ Test before reboot!!!
     
 ### 10. creating Noctalia config
 
+    sudo pacman -S wget
+    mkdir -p ~/.config/noctalia
+    cd ~/.config/noctalia
+    for file in colors.json plugins.json settings.json; do
+    if [ -f "$file" ]; then
+        mv "$file" "$file.backup"
+    fi
+    done
+    wget https://raw.githubusercontent.com/BlackoneBc/Nice-to-have-Linux-Stuff/main/noctalia/colors.json
+    wget https://raw.githubusercontent.com/BlackoneBc/Nice-to-have-Linux-Stuff/main/noctalia/plugins.json
+    wget https://raw.githubusercontent.com/BlackoneBc/Nice-to-have-Linux-Stuff/main/noctalia/settings.json
+
 
