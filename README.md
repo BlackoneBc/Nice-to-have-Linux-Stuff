@@ -62,8 +62,67 @@ Test before reboot!!!
 
 ### 9. Installing Spicetify
 
-    sudo pacman -S --needed unzip && curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s -- --no-marketplace && mkdir -p ~/.config/spicetify && printf "[Settings]\nspotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/\nprefs_path = /home/$USER/.var/app/com.spotify.Client/config/spotify/prefs\n" > ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && bash <(curl -sSL https://raw.githubusercontent.com/spicetify/marketplace/main/install.sh) -y && ~/.spicetify/spicetify backup apply && ~/.spicetify/spicetify apply
+    sudo pacman -S --needed unzip
 
+    # 1. Spicetify CLI installieren (ohne ungültige Optionen)
+    curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s --
+
+    # 2. Konfigurationsverzeichnis anlegen
+    mkdir -p ~/.config/spicetify
+
+    # 3. Spotify-Pfade ermitteln
+    SPOTIFY_PATH=$(flatpak info com.spotify.Client --show-location 2>/dev/null || echo "")
+    if [[ -z "$SPOTIFY_PATH" ]]; then
+        echo "Spotify Flatpak nicht gefunden – bitte zuerst installieren."
+    else
+        SPOTIFY_FILES="$SPOTIFY_PATH/extra/share/spotify"
+        PREFS_PATH="$HOME/.var/app/com.spotify.Client/config/spotify/prefs"
+
+        # 4. config-xpui.ini mit korrekten Pfaden erstellen
+        cat > ~/.config/spicetify/config-xpui.ini <<EOF
+    [Settings]
+    spotify_path = $SPOTIFY_FILES
+    prefs_path = $PREFS_PATH
+    EOF
+
+        # 5. Schreibrechte für die Spotify-Ordner setzen (Flatpak-spezifisch)
+        #    Spicetify benötigt vollen Schreibzugriff, weil es Dateien im Apps-Ordner überschreibt.
+        sudo chmod a+wr -R "$SPOTIFY_FILES"
+        # Zusätzlich für die Apps/Unterordner (sicherheitshalber)
+        sudo chmod a+wr -R "$SPOTIFY_FILES/Apps"
+
+        # 6. Marketplace installieren (optional, aber empfohlen)
+        #    Du kannst diesen Teil weglassen, wenn du Marketplace nicht haben möchtest.
+        echo "Möchtest du das Spicetify-Marketplace installieren? (J/n)"
+        read -r INSTALL_MARKET
+        if [[ ! "$INSTALL_MARKET" =~ ^[Nn]$ ]]; then
+            bash <(curl -sSL https://raw.githubusercontent.com/spicetify/marketplace/main/install.sh) -y
+        fi
+
+        # 7. Backup erstellen und Patches anwenden
+        ~/.spicetify/spicetify backup apply
+        ~/.spicetify/spicetify apply
+
+        echo "Spicetify wurde erfolgreich eingerichtet."
+    fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 ### 10. creating Noctalia config
 
     bash -c 'mkdir -p ~/.config/noctalia &&
