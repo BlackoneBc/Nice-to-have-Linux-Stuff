@@ -1,0 +1,1413 @@
+[1] /run/.heim_org.h5l.kcm-socket, /tmp, xdg-desktop, xdg-download, xdg-run/dconf, xdg-run/pipewire-0, ~/.config/dconf:ro, ~/.config/kioslaverc,
+    ~/.local/share/applications:create, ~/.local/share/icons:create
+[2] ca.desrt.dconf, com.canonical.AppMenu.Registrar, org.cinnamon.ScreenSaver, org.freedesktop.FileManager1, org.freedesktop.Notifications,
+    org.freedesktop.ScreenSaver, org.freedesktop.secrets, org.gnome.Mutter.IdleMonitor.*, org.gnome.ScreenSaver, org.gnome.SessionManager,
+    org.kde.kwalletd5, org.kde.kwalletd6, org.mate.ScreenSaver, org.xfce.ScreenSaver
+[3] org.mpris.MediaPlayer2.chromium.*
+[4] org.bluez, org.freedesktop.Avahi, org.freedesktop.UPower
+
+io.github.Geocld.PeaSyo4Desk Berechtigungen:
+ipc network pulseaudio x11 devices bluetooth file access [1]
+
+[1] /run/udev:ro
+
+dev.vencord.Vesktop Berechtigungen:
+ipc network pulseaudio wayland x11 devices file access [1] dbus access [2]
+
+[1] xdg-download, xdg-pictures:ro, xdg-run/pipewire-0, xdg-run/speech-dispatcher, xdg-videos:ro, ~/.steam
+[2] com.canonical.AppMenu.Registrar, org.kde.StatusNotifierWatcher
+
+com.valvesoftware.Steam Berechtigungen:
+ipc network pulseaudio wayland x11 devices
+bluetooth devel multiarch per-app-dev-shm file access [1] dbus access [2]
+bus ownership [3] system dbus access [4] tags [5]
+
+[1] /media, /mnt, /run/media, /run/udev:ro, xdg-config/MangoHud:ro, xdg-music:ro, xdg-pictures:ro, xdg-run/app/com.discordapp.Discord:create,
+    xdg-run/pipewire-0:ro, xdg-run/speech-dispatcher:ro
+[2] org.freedesktop.Notifications, org.freedesktop.PowerManagement, org.freedesktop.ScreenSaver, org.gnome.SessionManager,
+    org.kde.StatusNotifierWatcher
+[3] com.steampowered.*
+[4] org.freedesktop.UDisks2, org.freedesktop.UPower
+[5] proprietary
+
+com.spotify.Client Berechtigungen:
+ipc network fallback-x11 pulseaudio wayland dri file access [1]
+dbus access [2] bus ownership [3] tags [4]
+
+[1] xdg-music:ro, xdg-pictures:ro, xdg-run/pipewire-0:ro
+[2] org.freedesktop.ScreenSaver, org.gnome.SettingsDaemon.MediaKeys, org.kde.StatusNotifierWatcher
+[3] org.mpris.MediaPlayer2.spotify
+[4] proprietary
+
+com.lunarclient.LunarClient Berechtigungen:
+ipc network pulseaudio wayland x11 dri dbus access [1]
+
+[1] org.kde.StatusNotifierWatcher
+
+com.heroicgameslauncher.hgl Berechtigungen:
+ipc network pulseaudio wayland x11 devices
+bluetooth devel multiarch per-app-dev-shm file access [1] dbus access [2]
+system dbus access [3]
+
+[1] /media, /mnt, /run/media, /run/udev:ro, xdg-config/MangoHud:ro, xdg-data/umu:create, xdg-desktop, xdg-documents,
+    xdg-run/app/com.discordapp.Discord:create, xdg-run/gamescope-0, ~/.local/share/applications, ~/.local/share/lutris, ~/.steam, ~/.steam/steam,
+    ~/.var/app/com.valvesoftware.Steam, ~/Games/Heroic:create
+[2] com.canonical.Unity, org.freedesktop.Notifications, org.freedesktop.PowerManagement, org.freedesktop.ScreenSaver,
+    org.gnome.SettingsDaemon.MediaKeys, org.kde.StatusNotifierWatcher
+[3] org.freedesktop.UDisks2, org.freedesktop.UPower
+
+com.github.IsmaelMartinez.teams_for_linux Berechtigungen:
+ipc network fallback-x11 pulseaudio wayland devices
+file access [1] dbus access [2] system dbus access [3]
+
+[1] home, xdg-run/pipewire-0
+[2] org.freedesktop.Notifications, org.freedesktop.PowerManagement, org.freedesktop.ScreenSaver, org.gnome.SessionManager, org.gtk.Notifications,
+    org.kde.StatusNotifierWatcher
+[3] org.freedesktop.login1
+
+com.brave.Browser Berechtigungen:
+ipc network cups pcsc pulseaudio wayland
+x11 devices bluetooth file access [1] dbus access [2] bus ownership [3]
+system dbus access [4]
+
+[1] /run/.heim_org.h5l.kcm-socket, /tmp, host-etc, xdg-desktop, xdg-download, xdg-run/dconf, xdg-run/pipewire-0, ~/.config/dconf:ro,
+    ~/.config/kioslaverc, ~/.local/share/applications:create, ~/.local/share/icons:create
+[2] ca.desrt.dconf, com.canonical.AppMenu.Registrar, org.cinnamon.ScreenSaver, org.freedesktop.FileManager1, org.freedesktop.Notifications,
+    org.freedesktop.ScreenSaver, org.freedesktop.secrets, org.gnome.Mutter.IdleMonitor.*, org.gnome.ScreenSaver, org.gnome.SessionManager,
+    org.kde.kwalletd5, org.kde.kwalletd6, org.mate.ScreenSaver, org.xfce.ScreenSaver
+[3] org.mpris.MediaPlayer2.brave.*
+[4] org.bluez, org.freedesktop.Avahi, org.freedesktop.UPower
+
+org.prismlauncher.PrismLauncher Berechtigungen:
+ipc network pulseaudio wayland x11 devices file access [1] dbus access [2]
+
+[1] /sys/kernel/mm/hugepages:ro, /sys/kernel/mm/transparent_hugepage:ro, xdg-config/kdeglobals:ro, xdg-download:ro,
+    xdg-run/app/com.discordapp.Discord:create, ~/.ftba:ro
+[2] com.canonical.AppMenu.Registrar, org.kde.KGlobalSettings, org.kde.kconfig.notify
+
+com.rtosta.zapzap Berechtigungen:
+ipc network fallback-x11 pulseaudio wayland devices file access [1] dbus access [2]
+
+[1] xdg-config/kdeglobals:ro, xdg-documents, xdg-download, xdg-pictures
+[2] com.canonical.AppMenu.Registrar, org.freedesktop.Notifications, org.kde.KGlobalSettings, org.kde.StatusNotifierWatcher, org.kde.kconfig.notify
+
+org.videolan.VLC Berechtigungen:
+ipc network pulseaudio x11 devices file access [1] dbus access [2]
+bus ownership [3]
+
+[1] host, xdg-config/kdeglobals:ro, xdg-run/gvfs
+[2] com.canonical.AppMenu.Registrar, org.freedesktop.PowerManagement, org.freedesktop.ScreenSaver, org.freedesktop.secrets, org.kde.KGlobalSettings,
+    org.kde.StatusNotifierWatcher, org.kde.kconfig.notify, org.kde.kwalletd, org.kde.kwalletd5, org.mpris.MediaPlayer2.Player
+[3] org.mpris.MediaPlayer2.vlc
+
+
+    KENNUNG                                                           Zweig                  Op            Gegenstelle           Herunterladen
+
+    [✓] com.jeffser.Alpaca.Locale stable i flathub 73,2 KB / 1,0 MB
+    [✓] com.rtosta.zapzap.Locale stable i flathub 4,5 MB / 92,5 MB
+    [✓] io.github.ecotubehq.player.Locale stable i flathub 17,5 KB / 467,7 KB
+    [✓] io.github.revisto.drum_machine.Locale stable i flathub 6,0 KB / 92,8 KB
+    [✓] io.github.ungoogled_software.ungoogled_chromium.Locale stable i flathub 251,2 KB / 19,4 MB
+    [✓] io.gitlab.adhami3310.Impression.Locale stable i flathub 6,3 KB / 71,4 KB
+    [✓] io.missioncenter.MissionCenter.Locale stable i flathub 19,4 KB / 423,1 KB
+    [✓] org.freedesktop.Platform.Compat.i386 25.08 i flathub 112,0 MB / 127,1 MB
+    [✓] org.freedesktop.Platform.GL32.default 25.08 i flathub 129,2 MB / 153,7 MB
+    [✓] org.freedesktop.Platform.GL32.default 25.08-extra i flathub 27,9 MB / 153,8 MB
+    [✓] org.freedesktop.Platform.Locale 25.08 i flathub 81,1 KB / 379,4 MB
+    [✓] org.freedesktop.Platform.codecs_extra.i386 25.08-extra i flathub 13,3 MB / 13,6 MB
+    [✓] org.gnome.Decibels.Locale stable i flathub 8,2 KB / 135,8 KB
+    [✓] org.gnome.Showtime.Locale stable i flathub 8,5 KB / 156,0 KB
+    [✓] org.gnome.TextEditor.Locale stable i flathub 15,6 KB / 551,8 KB
+    [✓] org.gnome.TextEditor stable i flathub 1,1 MB / 1,3 MB
+    [✓] org.gnome.Showtime stable i flathub 4,2 MB / 4,2 MB
+    [✓] org.gnome.Decibels stable i flathub 173,5 KB / 225,5 KB
+    [✓] io.missioncenter.MissionCenter stable i flathub 15,2 MB / 15,4 MB
+    [✓] io.gitlab.adhami3310.Impression stable i flathub 4,9 MB / 5,6 MB
+    [✓] io.github.revisto.drum-machine stable i flathub 17,2 MB / 23,0 MB
+    [✓] io.github.ecotubehq.player stable i flathub 33,4 MB / 34,4 MB
+    [✓] com.nuclearplayer.Nuclear stable i flathub 25,2 MB / 25,4 MB
+    [✓] com.jeffser.Alpaca stable i flathub 646,8 MB / 748,4 MB
+    [✓] org.freedesktop.Platform 25.08 i flathub 102,8 MB / 253,4 MB
+    [✓] org.onlyoffice.desktopeditors stable i flathub 592,1 MB / 615,5 MB
+    [✓] org.bluej.BlueJ stable i flathub 143,2 MB / 145,0 MB
+    [✓] io.github.ungoogled_software.ungoogled_chromium stable i flathub 161,2 MB / 162,0 MB
+    [✓] io.github.Geocld.PeaSyo4Desk stable i flathub 165,6 MB / 194,5 MB
+    [✓] dev.vencord.Vesktop stable i flathub 119,6 MB / 123,4 MB
+    [✓] com.valvesoftware.Steam stable i flathub 33,7 MB / 35,5 MB
+    [✓] com.spotify.Client stable i flathub 193,4 MB / 193,8 MB
+    [✓] com.lunarclient.LunarClient stable i flathub 133,0 MB / 143,3 MB
+    [✓] com.heroicgameslauncher.hgl stable i flathub 349,3 MB / 356,0 MB
+    [✓] com.github.IsmaelMartinez.teams_for_linux stable i flathub 134,3 MB / 144,7 MB
+    [✓] com.brave.Browser stable i flathub 201,8 MB / 211,4 MB
+    [✓] org.kde.Platform.Locale 5.15-25.08 i flathub 580,1 KB / 400,3 MB
+    [✓] org.kde.Platform 5.15-25.08 i flathub 273,2 MB / 367,4 MB
+    [✓] org.kde.Platform.Locale 6.10 i flathub 398,9 KB / 401,3 MB
+    [✓] org.kde.Platform 6.10 i flathub 218,4 MB / 387,3 MB
+    [✓] org.prismlauncher.PrismLauncher stable i flathub 40,7 MB / 41,6 MB
+    [✓] org.kde.Platform.Locale 6.11 i flathub 134,4 KB / 401,6 MB
+    [✓] org.kde.Platform 6.11 i flathub 307,9 MB / 405,5 MB
+    [✓] com.rtosta.zapzap stable i flathub 138,9 MB / 144,5 MB
+    [✓] org.videolan.VLC.Locale stable i flathub 251,0 KB / 14,7 MB
+    [✓] org.videolan.VLC stable i flathub 45,7 MB / 52,7 MB
+
+Installation abgeschlossen.
+
+/usr/share/sddm/themes/silent 9m
+❯ cd
+
+~
+❯
+
+~
+❯
+
+~
+❯
+
+~
+❯
+
+~
+❯
+
+~
+❯
+
+~
+❯ sudo pacman -S --needed unzip && curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s -- --no-marketplace && mkdir -p ~/.config/spicetify && printf "[Settings]\nspotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/\nprefs_path = /home/$USER/.var/app/com.spotify.Client/config/spotify/prefs\n" > ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && bash <(curl -sSL https://raw.githubusercontent.com/spicetify/marketplace/main/install.sh) -y && ~/.spicetify/spicetify backup apply && ~/.spicetify/spicetify apply
+[sudo] Passwort für lennart:
+Warnung: unzip-6.0-23.1 ist aktuell -- Überspringe
+Es gibt nichts zu tun
+Invalid option --no-marketplace
+
+~
+❯ sudo pacman -S --needed unzip && curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s -- && mkdir -p ~/.config/spicetify && printf "[Settings]\nspotify_path = /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/\nprefs_path = /home/$USER/.var/app/com.spotify.Client/config/spotify/prefs\n" > ~/.config/spicetify/config-xpui.ini && sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/ && bash <(curl -sSL https://raw.githubusercontent.com/spicetify/marketplace/main/install.sh) -y && ~/.spicetify/spicetify backup apply && ~/.spicetify/spicetify apply
+Warnung: unzip-6.0-23.1 ist aktuell -- Überspringe
+Es gibt nichts zu tun
+FETCHING Version 2.44.0
+CREATING /home/lennart/.spicetify
+DOWNLOADING
+https://github.com/spicetify/cli/releases/download/v2.44.0/spicetify-2.44.0-linux-amd64.tar.gzz
+######################################################################## 100.0%
+EXTRACTING /home/lennart/.spicetify/spicetify.tar.gz
+SETTING EXECUTABLE PERMISSIONS TO /home/lennart/.spicetify/spicetify
+REMOVING /home/lennart/.spicetify/spicetify.tar.gz
+APPENDING /home/lennart/.spicetify to PATH in /home/lennart/.config/fish/config.fish
+
+spicetify v2.44.0 was installed successfully to /home/lennart/.spicetify
+Run 'spicetify --help' to get started
+Do you want to install spicetify Marketplace? (Y/n)
+y
+Starting the spicetify Marketplace installation script..
+FETCHING Version 1.0.9
+MAKING FOLDER /home/lennart/.config/spicetify/CustomApps
+DOWNLOADING
+https://github.com/spicetify/marketplace/releases/download/v1.0.9/marketplace.zipp
+######################################################################## 100.0%
+EXTRACTING
+COPYING
+INSTALLING
+error Could not detect "prefs" file location
+success Default config-xpui.ini generated
+warning Config "custom_apps" unchanged: spicetify-marketplace is not on the list.
+success Config changed: inject_css = 1
+info Run "spicetify apply" to apply new config
+success Config changed: replace_colors = 1
+info Run "spicetify apply" to apply new config
+No theme selected, using placeholder theme
+MAKING FOLDER /home/lennart/.config/spicetify/Themes/marketplace
+######################################################################## 100.0%
+success Config changed: current_theme = marketplace
+info Run "spicetify apply" to apply new config
+success Config changed: custom_apps = marketplace
+info Run "spicetify apply" to apply new config
+Added to config!
+APPLYING
+error Cannot detect Spotify "prefs" file location. Please manually set "prefs_path" in config-xpui.ini
+
+~
+❯ spicetify apply
+fish: Unknown command: spicetify
+
+~
+❯ bash -c 'mkdir -p ~/.config/noctalia &&
+cat > ~/.config/noctalia/colors.json << "EOF"
+{
+"mError": "#f38ba8",
+"mHover": "#94e2d5",
+"mOnError": "#11111b",
+"mOnHover": "#11111b",
+"mOnPrimary": "#11111b",
+"mOnSecondary": "#11111b",
+"mOnSurface": "#cdd6f4",
+"mOnSurfaceVariant": "#a3b4eb",
+"mOnTertiary": "#11111b",
+"mOutline": "#4c4f69",
+"mPrimary": "#cba6f7",
+"mSecondary": "#fab387",
+"mShadow": "#11111b",
+"mSurface": "#1e1e2e",
+"mSurfaceVariant": "#313244",
+"mTertiary": "#94e2d5"
+}
+EOF
+cat > ~/.config/noctalia/plugins.json << "EOF"
+{
+"sources": [
+{
+"enabled": true,
+"name": "Noctalia Plugins",
+"url": "
+noctalia-dev/noctalia-pluginss"
+}
+],
+"states": {
+},
+"version": 2
+}
+EOF
+cat > ~/.config/noctalia/settings.json << "EOF"
+{
+"appLauncher": {
+"autoPasteClipboard": false,
+"clipboardWatchImageCommand": "wl-paste --type image --watch cliphist store",
+"clipboardWatchTextCommand": "wl-paste --type text --watch cliphist store",
+"clipboardWrapText": true,
+"customLaunchPrefix": "",
+"customLaunchPrefixEnabled": false,
+"density": "default",
+"enableClipPreview": true,
+"enableClipboardChips": true,
+"enableClipboardHistory": false,
+"enableClipboardSmartIcons": true,
+"enableSessionSearch": true,
+"enableSettingsSearch": true,
+"enableWindowsSearch": true,
+"iconMode": "tabler",
+"ignoreMouseInput": false,
+"overviewLayer": false,
+"pinnedApps": [
+"firefox",
+"org.gnome.Nautilus",
+"Alacritty",
+"discord",
+"org.gnome.Software",
+"org.manjaro.pamac.manager",
+"org.gnome.DiskUtility",
+"steam",
+"com.valvesoftware.Steam",
+"com.spotify.Client",
+"org.gnome.Terminal"
+],
+"position": "center",
+"screenshotAnnotationTool": "",
+"showCategories": true,
+"showIconBackground": false,
+"sortByMostUsed": true,
+"terminalCommand": "alacritty -e",
+"viewMode": "list"
+},
+"audio": {
+"mprisBlacklist": [
+],
+"preferredPlayer": "",
+"spectrumFrameRate": 30,
+"spectrumMirrored": true,
+"visualizerType": "wave",
+"volumeFeedback": false,
+"volumeFeedbackSoundFile": "",
+"volumeOverdrive": false,
+"volumeStep": 5
+},
+"bar": {
+"autoHideDelay": 500,
+"autoShowDelay": 150,
+"backgroundOpacity": 0.93,
+"barType": "simple",
+"capsuleColorKey": "none",
+"capsuleOpacity": 1,
+"contentPadding": 2,
+"density": "spacious",
+"displayMode": "always_visible",
+"enableExclusionZoneInset": true,
+"fontScale": 1,
+"frameRadius": 12,
+"frameThickness": 8,
+"hideOnOverview": false,
+"marginHorizontal": 4,
+"marginVertical": 4,
+"middleClickAction": "settings",
+"middleClickCommand": "",
+"middleClickFollowMouse": true,
+"monitors": [
+],
+"mouseWheelAction": "volume",
+"mouseWheelWrap": true,
+"outerCorners": true,
+"position": "top",
+"reverseScroll": false,
+"rightClickAction": "launcherPanel",
+"rightClickCommand": "",
+"rightClickFollowMouse": true,
+"screenOverrides": [
+],
+"showCapsule": true,
+"showOnWorkspaceSwitch": true,
+"showOutline": false,
+"useSeparateOpacity": false,
+"widgetSpacing": 6,
+"widgets": {
+"center": [
+{
+"colorName": "primary",
+"hideWhenIdle": false,
+"id": "AudioVisualizer",
+"width": 200
+},
+{
+"clockColor": "none",
+"customFont": "",
+"formatHorizontal": "HH:mm ddd, MMM dd",
+"formatVertical": "HH mm - dd MM",
+"id": "Clock",
+"tooltipFormat": "HH:mm ddd, MMM dd",
+"useCustomFont": false
+},
+{
+"compactMode": false,
+"hideMode": "transparent",
+"hideWhenIdle": false,
+"id": "MediaMini",
+"maxWidth": 145,
+"panelShowAlbumArt": true,
+"scrollingMode": "hover",
+"showAlbumArt": true,
+"showArtistFirst": true,
+"showProgressRing": true,
+"showVisualizer": false,
+"textColor": "none",
+"useFixedWidth": false,
+"visualizerType": "linear"
+}
+],
+"left": [
+{
+"colorizeSystemIcon": "none",
+"colorizeSystemText": "none",
+"customIconPath": "",
+"enableColorization": true,
+"icon": "rocket",
+"iconColor": "none",
+"id": "Launcher",
+"useDistroLogo": true
+},
+{
+"compactMode": true,
+"diskPath": "/",
+"iconColor": "none",
+"id": "SystemMonitor",
+"showCpuCores": false,
+"showCpuFreq": false,
+"showCpuTemp": true,
+"showCpuUsage": true,
+"showDiskAvailable": false,
+"showDiskUsage": false,
+"showDiskUsageAsPercent": false,
+"showGpuTemp": false,
+"showLoadAverage": false,
+"showMemoryAsPercent": false,
+"showMemoryUsage": true,
+"showNetworkStats": false,
+"showSwapUsage": false,
+"textColor": "none",
+"useMonospaceFont": true,
+"usePadding": false
+},
+{
+"colorizeIcons": false,
+"hideMode": "hidden",
+"iconScale": 0.8,
+"id": "Taskbar",
+"maxTaskbarWidth": 40,
+"onlyActiveWorkspaces": true,
+"onlySameOutput": true,
+"showPinnedApps": true,
+"showTitle": false,
+"smartWidth": true,
+"titleWidth": 120
+}
+],
+"right": [
+{
+"blacklist": [
+],
+"chevronColor": "none",
+"colorizeIcons": false,
+"drawerEnabled": true,
+"hidePassive": false,
+"id": "Tray",
+"pinned": [
+]
+},
+{
+"hideWhenZero": false,
+"hideWhenZeroUnread": false,
+"iconColor": "none",
+"id": "NotificationHistory",
+"showUnreadBadge": true,
+"unreadBadgeColor": "primary"
+},
+{
+"displayMode": "onhover",
+"iconColor": "none",
+"id": "Volume",
+"middleClickCommand": "pwvucontrol || pavucontrol",
+"textColor": "none"
+},
+{
+"displayMode": "onhover",
+"iconColor": "none",
+"id": "KeyboardLayout",
+"showIcon": true,
+"textColor": "none"
+},
+{
+"displayMode": "onhover",
+"iconColor": "none",
+"id": "Bluetooth",
+"textColor": "none"
+},
+{
+"displayMode": "onhover",
+"iconColor": "none",
+"id": "VPN",
+"textColor": "none"
+},
+{
+"displayMode": "onhover",
+"iconColor": "none",
+"id": "Network",
+"textColor": "none"
+},
+{
+"iconColor": "none",
+"id": "WallpaperSelector"
+},
+{
+"colorizeDistroLogo": false,
+"colorizeSystemIcon": "none",
+"colorizeSystemText": "none",
+"customIconPath": "",
+"enableColorization": false,
+"icon": "power",
+"id": "ControlCenter",
+"useDistroLogo": false
+}
+]
+}
+},
+"brightness": {
+"backlightDeviceMappings": [
+],
+"brightnessStep": 5,
+"enableDdcSupport": false,
+"enforceMinimum": true
+},
+"calendar": {
+"cards": [
+{
+"enabled": true,
+"id": "calendar-header-card"
+},
+{
+"enabled": true,
+"id": "calendar-month-card"
+},
+{
+"enabled": true,
+"id": "weather-card"
+}
+]
+},
+"colorSchemes": {
+"darkMode": true,
+"generationMethod": "tonal-spot",
+"manualSunrise": "06:30",
+"manualSunset": "18:30",
+"monitorForColors": "",
+"predefinedScheme": "Catppuccin",
+"schedulingMode": "off",
+"syncGsettings": true,
+"useWallpaperColors": false
+},
+"controlCenter": {
+"cards": [
+{
+"enabled": true,
+"id": "profile-card"
+},
+{
+"enabled": true,
+"id": "shortcuts-card"
+},
+{
+"enabled": true,
+"id": "audio-card"
+},
+{
+"enabled": false,
+"id": "brightness-card"
+},
+{
+"enabled": true,
+"id": "weather-card"
+},
+{
+"enabled": true,
+"id": "media-sysmon-card"
+}
+],
+"diskPath": "/",
+"position": "close_to_bar_button",
+"shortcuts": {
+"left": [
+{
+"id": "Network"
+},
+{
+"id": "Bluetooth"
+},
+{
+"id": "WallpaperSelector"
+},
+{
+"id": "NoctaliaPerformance"
+},
+{
+"id": "DarkMode"
+}
+],
+"right": [
+{
+"id": "Notifications"
+},
+{
+"id": "PowerProfile"
+},
+{
+"id": "KeepAwake"
+},
+{
+"id": "NightLight"
+}
+]
+}
+},
+"desktopWidgets": {
+"enabled": true,
+"gridSnap": false,
+"gridSnapScale": false,
+"monitorWidgets": [
+{
+"name": "DP-1",
+"widgets": [
+{
+"clockColor": "none",
+"clockStyle": "minimal",
+"customFont": "Noto Sans Ethiopic Thin",
+"format": "HH:mm\nd MMMM yyyy",
+"id": "Clock",
+"roundedCorners": true,
+"scale": 1.2535640723161134,
+"showBackground": false,
+"useCustomFont": true,
+"x": 1200,
+"y": 600
+},
+{
+"hideMode": "hidden",
+"id": "MediaPlayer",
+"roundedCorners": true,
+"scale": 1,
+"showAlbumArt": true,
+"showBackground": true,
+"showButtons": true,
+"showVisualizer": true,
+"visualizerType": "linear",
+"x": 40,
+"y": 1320
+},
+{
+"id": "Weather",
+"roundedCorners": true,
+"scale": 1,
+"showBackground": true,
+"x": 2280,
+"y": 80
+},
+{
+"diskPath": "/",
+"id": "SystemStat",
+"layout": "bottom",
+"roundedCorners": true,
+"scale": 1,
+"showBackground": false,
+"statType": "CPU",
+"x": 2280,
+"y": 1040
+},
+{
+"diskPath": "/",
+"id": "SystemStat",
+"layout": "side",
+"roundedCorners": true,
+"scale": 1,
+"showBackground": false,
+"statType": "Memory",
+"x": 2280,
+"y": 1160
+},
+{
+"diskPath": "/",
+"id": "SystemStat",
+"layout": "side",
+"roundedCorners": true,
+"scale": 1,
+"showBackground": false,
+"statType": "Network",
+"x": 2280,
+"y": 1280
+},
+{
+"colorName": "primary",
+"height": 150,
+"hideWhenIdle": false,
+"id": "AudioVisualizer",
+"roundedCorners": true,
+"scale": 2.697350902673208,
+"showBackground": false,
+"visualizerType": "linear",
+"width": 500,
+"x": 618,
+"y": 1001
+}
+]
+}
+],
+"overviewEnabled": true
+},
+"dock": {
+"animationSpeed": 1,
+"backgroundOpacity": 0.87,
+"colorizeIcons": false,
+"deadOpacity": 0.6,
+"displayMode": "auto_hide",
+"dockType": "attached",
+"enabled": true,
+"floatingRatio": 1,
+"groupApps": false,
+"groupClickAction": "cycle",
+"groupContextMenuMode": "extended",
+"groupIndicatorStyle": "dots",
+"inactiveIndicators": true,
+"indicatorColor": "primary",
+"indicatorOpacity": 0.5,
+"indicatorThickness": 6,
+"launcherIcon": "",
+"launcherIconColor": "none",
+"launcherPosition": "start",
+"launcherUseDistroLogo": true,
+"monitors": [
+],
+"onlySameOutput": false,
+"pinnedApps": [
+"org.gnome.Terminal",
+"Alacritty",
+"firefox",
+"org.gnome.Nautilus",
+"org.gnome.Software",
+"org.manjaro.pamac.manager",
+"com.heroicgameslauncher.hgl",
+"steamwebhelper",
+"discord",
+"com.spotify.Client",
+"DesktopEditors"
+],
+"pinnedStatic": false,
+"position": "bottom",
+"showDockIndicator": true,
+"showLauncherIcon": true,
+"sitOnFrame": false,
+"size": 1.1
+},
+"general": {
+"allowPanelsOnScreenWithoutBar": true,
+"allowPasswordWithFprintd": false,
+"animationDisabled": false,
+"animationSpeed": 1,
+"autoStartAuth": false,
+"avatarImage": "/home/lennart/Dokumente/Wallpaper/3d-model.jpg",
+"boxRadiusRatio": 1,
+"clockFormat": "hh\nmm",
+"clockStyle": "custom",
+"compactLockScreen": false,
+"dimmerOpacity": 0.2,
+"enableBlurBehind": true,
+"enableLockScreenCountdown": true,
+"enableLockScreenMediaControls": false,
+"enableShadows": true,
+"forceBlackScreenCorners": false,
+"iRadiusRatio": 1,
+"keybinds": {
+"keyDown": [
+"Down"
+],
+"keyEnter": [
+"Return",
+"Enter"
+],
+"keyEscape": [
+"Esc"
+],
+"keyLeft": [
+"Left"
+],
+"keyRemove": [
+"Del"
+],
+"keyRight": [
+"Right"
+],
+"keyUp": [
+"Up"
+]
+},
+"language": "",
+"lockOnSuspend": true,
+"lockScreenAnimations": false,
+"lockScreenBlur": 0,
+"lockScreenCountdownDuration": 10000,
+"lockScreenMonitors": [
+],
+"lockScreenTint": 0,
+"passwordChars": false,
+"radiusRatio": 1.6,
+"reverseScroll": false,
+"scaleRatio": 1.05,
+"screenRadiusRatio": 1,
+"shadowDirection": "bottom_right",
+"shadowOffsetX": 2,
+"shadowOffsetY": 3,
+"showChangelogOnStartup": true,
+"showHibernateOnLockScreen": false,
+"showScreenCorners": false,
+"showSessionButtonsOnLockScreen": true,
+"smoothScrollEnabled": true,
+"telemetryEnabled": false
+},
+"hooks": {
+"colorGeneration": "",
+"darkModeChange": "",
+"enabled": false,
+"performanceModeDisabled": "",
+"performanceModeEnabled": "",
+"screenLock": "",
+"screenUnlock": "",
+"session": "",
+"startup": "",
+"wallpaperChange": ""
+},
+"idle": {
+"customCommands": "[]",
+"enabled": false,
+"fadeDuration": 5,
+"lockCommand": "",
+"lockTimeout": 660,
+"resumeLockCommand": "",
+"resumeScreenOffCommand": "",
+"resumeSuspendCommand": "",
+"screenOffCommand": "",
+"screenOffTimeout": 600,
+"suspendCommand": "",
+"suspendTimeout": 1800
+},
+"location": {
+"analogClockInCalendar": false,
+"autoLocate": false,
+"firstDayOfWeek": -1,
+"hideWeatherCityName": false,
+"hideWeatherTimezone": false,
+"name": "Bünde",
+"showCalendarEvents": true,
+"showCalendarWeather": true,
+"showWeekNumberInCalendar": false,
+"use12hourFormat": false,
+"useFahrenheit": false,
+"weatherEnabled": true,
+"weatherShowEffects": true,
+"weatherTaliaMascotAlways": false
+},
+"network": {
+"bluetoothAutoConnect": true,
+"bluetoothDetailsViewMode": "grid",
+"bluetoothHideUnnamedDevices": false,
+"bluetoothRssiPollIntervalMs": 60000,
+"bluetoothRssiPollingEnabled": false,
+"disableDiscoverability": false,
+"networkPanelView": "wifi",
+"wifiDetailsViewMode": "grid"
+},
+"nightLight": {
+"autoSchedule": true,
+"dayTemp": "6500",
+"enabled": false,
+"forced": false,
+"manualSunrise": "06:30",
+"manualSunset": "18:30",
+"nightTemp": "4000"
+},
+"noctaliaPerformance": {
+"disableDesktopWidgets": true,
+"disableWallpaper": true
+},
+"notifications": {
+"backgroundOpacity": 1,
+"clearDismissed": true,
+"criticalUrgencyDuration": 15,
+"density": "default",
+"enableBatteryToast": true,
+"enableKeyboardLayoutToast": true,
+"enableMarkdown": false,
+"enableMediaToast": false,
+"enabled": true,
+"location": "top_right",
+"lowUrgencyDuration": 3,
+"monitors": [
+],
+"normalUrgencyDuration": 8,
+"overlayLayer": true,
+"respectExpireTimeout": false,
+"saveToHistory": {
+"critical": true,
+"low": true,
+"normal": true
+},
+"sounds": {
+"criticalSoundFile": "",
+"enabled": false,
+"excludedApps": "discord,firefox,chrome,chromium,edge",
+"lowSoundFile": "",
+"normalSoundFile": "",
+"separateSounds": false,
+"volume": 0.5
+}
+},
+"osd": {
+"autoHideMs": 2000,
+"backgroundOpacity": 1,
+"enabled": true,
+"enabledTypes": [
+0,
+1,
+2
+],
+"location": "top_right",
+"monitors": [
+],
+"overlayLayer": true
+},
+"plugins": {
+"autoUpdate": false,
+"notifyUpdates": true
+},
+"sessionMenu": {
+"countdownDuration": 10000,
+"enableCountdown": true,
+"largeButtonsLayout": "single-row",
+"largeButtonsStyle": true,
+"position": "center",
+"powerOptions": [
+{
+"action": "lock",
+"enabled": true,
+"keybind": "1"
+},
+{
+"action": "suspend",
+"enabled": true,
+"keybind": "2"
+},
+{
+"action": "hibernate",
+"enabled": true,
+"keybind": "3"
+},
+{
+"action": "reboot",
+"enabled": true,
+"keybind": "4"
+},
+{
+"action": "logout",
+"enabled": true,
+"keybind": "5"
+},
+{
+"action": "shutdown",
+"enabled": true,
+"keybind": "6"
+},
+{
+"action": "rebootToUefi",
+"enabled": true,
+"keybind": "7"
+}
+],
+"showHeader": true,
+"showKeybinds": true
+},
+"settingsVersion": 59,
+"systemMonitor": {
+"batteryCriticalThreshold": 5,
+"batteryWarningThreshold": 20,
+"cpuCriticalThreshold": 90,
+"cpuWarningThreshold": 80,
+"criticalColor": "",
+"diskAvailCriticalThreshold": 10,
+"diskAvailWarningThreshold": 20,
+"diskCriticalThreshold": 90,
+"diskWarningThreshold": 80,
+"enableDgpuMonitoring": true,
+"externalMonitor": "resources || missioncenter || jdsystemmonitor || corestats || system-monitoring-center || gnome-system-monitor || plasma-systemmonitor || mate-system-monitor || ukui-system-monitor || deepin-system-monitor || pantheon-system-monitor",
+"gpuCriticalThreshold": 90,
+"gpuWarningThreshold": 80,
+"memCriticalThreshold": 90,
+"memWarningThreshold": 80,
+"swapCriticalThreshold": 90,
+"swapWarningThreshold": 80,
+"tempCriticalThreshold": 90,
+"tempWarningThreshold": 80,
+"useCustomColors": false,
+"warningColor": ""
+},
+"templates": {
+"activeTemplates": [
+],
+"enableUserTheming": false
+},
+"ui": {
+"boxBorderEnabled": false,
+"fontDefault": "Sans Serif",
+"fontDefaultScale": 1,
+"fontFixed": "monospace",
+"fontFixedScale": 1,
+"panelBackgroundOpacity": 0.85,
+"panelsAttachedToBar": true,
+"scrollbarAlwaysVisible": true,
+"settingsPanelMode": "attached",
+"settingsPanelSideBarCardStyle": false,
+"tooltipsEnabled": true,
+"translucentWidgets": false
+},
+"wallpaper": {
+"automationEnabled": false,
+"directory": "/home/lennart/Pictures/Wallpapers",
+"enableMultiMonitorDirectories": false,
+"enabled": true,
+"favorites": [
+{
+"appearance": "dark",
+"colorScheme": "Catppuccin",
+"darkMode": true,
+"generationMethod": "tonal-spot",
+"paletteColors": [
+"#cba6f7",
+"#fab387",
+"#94e2d5",
+"#f38ba8"
+],
+"path": "/home/lennart/Dokumente/Wallpaper/dark-waves.jpg",
+"useWallpaperColors": false
+}
+],
+"fillColor": "#000000",
+"fillMode": "crop",
+"hideWallpaperFilenames": false,
+"linkLightAndDarkWallpapers": true,
+"monitorDirectories": [
+],
+"overviewBlur": 0.4,
+"overviewEnabled": false,
+"overviewTint": 0.6,
+"panelPosition": "follow_bar",
+"randomIntervalSec": 300,
+"setWallpaperOnAllMonitors": true,
+"showHiddenFiles": false,
+"skipStartupTransition": false,
+"solidColor": "#1a1a2e",
+"sortOrder": "name",
+"transitionDuration": 1500,
+"transitionEdgeSmoothness": 0.05,
+"transitionType": [
+"fade",
+"disc",
+"stripes",
+"wipe",
+"pixelate",
+"honeycomb"
+],
+"useOriginalImages": false,
+"useSolidColor": false,
+"useWallhaven": false,
+"viewMode": "single",
+"wallhavenApiKey": "",
+"wallhavenCategories": "111",
+"wallhavenOrder": "desc",
+"wallhavenPurity": "100",
+"wallhavenQuery": "",
+"wallhavenRatios": "",
+"wallhavenResolutionHeight": "",
+"wallhavenResolutionMode": "atleast",
+"wallhavenResolutionWidth": "",
+"wallhavenSorting": "relevance",
+"wallpaperChangeMode": "random"
+}
+}
+EOF'
+bash: Zeile 843: Warnung: Das in der Zeile 22 beginnende Here-Dokument geht bis zum Dateiende (erwartet wird »EOF«).
+
+~
+❯
+
+~
+❯
+
+Jetzt ist es eindeutig. Ich habe auch die aktuelle Spicetify-Dokumentation geprüft: Für Flatpak nennt Spicetify genau deinen Pfad und empfiehlt tatsächlich Schreibrechte für das Spotify-Verzeichnis sowie Apps.
+
+Deine Situation ist:
+
+    spotify_path ✅ korrekt
+
+    prefs_path ✅ korrekt
+
+    backup ✅ erfolgreich
+
+    apply ❌ nur wegen root-Besitz der Spotify-Dateien
+
+Die Ausgabe bestätigt das:
+
+drwxr-xr-x root ... spotify
+-rw-r--r-- root ... Apps/login.spa
+
+Jetzt kannst du die von Spicetify dokumentierte Berechtigung setzen
+
+Nicht den Platzhalter ... verwenden. Bei dir ist der vollständige Pfad:
+
+sudo chmod a+wr /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify
+sudo chmod a+wr -R /var/lib/flatpak/app/com.spotify.Client/x86_64/stable/active/files/extra/share/spotify/Apps
+
+Das entspricht der offiziellen Flatpak-Anleitung von Spicetify.
+
+Danach:
+
+spicetify apply
+
+Falls apply erfolgreich ist
+
+Dann sollte ungefähr Folgendes erscheinen:
+
+success  Applied patches
+success  Finished applying
+
+Danach kannst du Spotify starten:
+
+flatpak run com.spotify.Client
+
+Und nicht erneut Marketplace installieren — der Marketplace ist bei dir bereits konfiguriert:
+
+current_theme = marketplace
+custom_apps = marketplace
+
+Spicetify beschreibt Marketplace ebenfalls als bereits installierbare Custom-App, die nach einem erfolgreichen apply in Spotify erscheinen sollte.
+Ein wichtiger Hinweis
+
+Die Schreibrechte können bei einem Flatpak-Update von Spotify wieder verloren gehen, weil Flatpak die installierten Dateien ersetzt. Spicetify weist generell darauf hin, dass nach Spotify-Updates backup apply erneut erforderlich sein kann.
+
+Mach jetzt nur die beiden chmod-Befehle und danach spicetify apply. Wenn apply etwas anderes als Erfolg meldet, poste die Ausgabe.
+
+jetzt noctalia
+
+Klar. 👍 Spotify lassen wir erstmal so.
+
+Bei Noctalia war der Fehler nur dein kaputtes Here-Document (EOF'). Wir machen es diesmal sauber und ohne den riesigen bash -c-Block.
+
+Da du die komplette gewünschte settings.json bereits gepostet hast, kannst du sie am sichersten über eine temporäre Datei schreiben und anschließend validieren.
+1. Noctalia-Verzeichnis vorbereiten
+
+In deiner Fish-Shell:
+
+mkdir -p ~/.config/noctalia
+
+2. colors.json neu erstellen
+
+cat > ~/.config/noctalia/colors.json <<'EOF'
+{
+  "mError": "#f38ba8",
+  "mHover": "#94e2d5",
+  "mOnError": "#11111b",
+  "mOnHover": "#11111b",
+  "mOnPrimary": "#11111b",
+  "mOnSecondary": "#11111b",
+  "mOnSurface": "#cdd6f4",
+  "mOnSurfaceVariant": "#a3b4eb",
+  "mOnTertiary": "#11111b",
+  "mOutline": "#4c4f69",
+  "mPrimary": "#cba6f7",
+  "mSecondary": "#fab387",
+  "mShadow": "#11111b",
+  "mSurface": "#1e1e2e",
+  "mSurfaceVariant": "#313244",
+  "mTertiary": "#94e2d5"
+}
+EOF
+
+Danach sofort prüfen:
+
+python -m json.tool ~/.config/noctalia/colors.json >/dev/null && echo "colors.json OK"
+
+3. Plugins konfigurieren
+
+cat > ~/.config/noctalia/plugins.json <<'EOF'
+{
+  "sources": [
+    {
+      "enabled": true,
+      "name": "Noctalia Plugins",
+      "url": "https://github.com/noctalia-dev/noctalia-plugins"
+    }
+  ],
+  "states": {},
+  "version": 2
+}
+EOF
+
+Prüfen:
+
+python -m json.tool ~/.config/noctalia/plugins.json >/dev/null && echo "plugins.json OK"
+
+4. Wichtig: settings.json
+
+Hier würde ich nicht deinen alten Block 1:1 erneut ausführen. Darin sind mindestens diese problematischen JSON-Escapes enthalten:
+
+"HH\:mm"
+
+Das muss in JSON sein:
+
+"HH:mm"
+
+Außerdem war dein alter Shell-Befehl durch EOF' kaputt.
+
+Du hast die vollständige Datei bereits oben gepostet. Ich kann dir daraus jetzt eine bereinigte settings.json ohne die fehlerhaften JSON-Escapes und mit korrekt funktionierendem Here-Document erstellen.
+
+Wenn du willst, gebe ich dir im nächsten Schritt einen einzigen kopierbaren Block für die komplette settings.json — inklusive deiner Catppuccin-Farben, Widgets, Dock, Wallpaper, Bünde-Wetter, Desktop-Widgets usw.
+
+7 hours ago
+Enhance README with Spicetify installation and script
+7 hours ago
+Update print statement from 'Hello' to 'Goodbye'
+11. All in one:
+
+7 hours ago
+Enhance README with Spicetify installation and script
+#!/bin/bash
+set -e
+# --- Configuration ---
+AUR_HELPER="yay" # or "paru"
+MONITOR_MAIN="DP-1"
+MONITOR_SEC="HDMI-A-1"
+WALLPAPER_DIR="$HOME/Dokumente/Wallpaper"
+SDDM_THEME="silent"
+# --- Helper functions ---
+confirm() {
+read -p "$1 (y/N) " -n 1 -r
+echo
+[[ $REPLY =~ ^[Yy]$ ]]
+}
+
+# --- Step 1: AUR Helper ---
+if ! command -v $AUR_HELPER &> /dev/null; then
+echo "Installing $AUR_HELPER..."
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/$AUR_HELPER.git
+cd $AUR_HELPER && makepkg -si --noconfirm
+cd ..
+rm -rf $AUR_HELPER
+fi
+# --- Step 2: Flatpak & GNOME Software ---
+echo "Installing Flatpak and GNOME Software..."
+sudo pacman -S --needed flatpak gnome-software gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# --- Step 3: Bibata Cursor ---
+if confirm "Install Bibata cursor and set it?"; then
+$AUR_HELPER -S --needed bibata-cursor-theme-bin
+gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
+gsettings set org.gnome.desktop.interface cursor-size 24
+mkdir -p ~/.config/labwc
+echo "XCURSOR_THEME=Bibata-Modern-Classic" >> ~/.config/labwc/environment
+echo "XCURSOR_SIZE=24" >> ~/.config/labwc/environment
+fi
+# --- Step 4: Noctalia Shell ---
+if confirm "Install Noctalia Shell?"; then
+$AUR_HELPER -S --needed noctalia-shell
+fi
+# --- Step 5: Autostart for Labwc ---
+if confirm "Configure Labwc autostart?"; then
+cat > ~/.config/labwc/autostart << 'EOF'
+#!/bin/sh
+# Keyboard layout
+setxkbmap de 2>/dev/null || true
+# Noctalia shell helper
+qs -c noctalia-shell &
+# Displays (adjust to your monitors)
+wlr-randr --output $MONITOR_MAIN --auto --pos 1440,560 2>/dev/null || \
+wlr-randr --output $MONITOR_SEC --auto --transform 90 --pos 0,0 2>/dev/null
+EOF
+chmod +x ~/.config/labwc/autostart
+fi
+# --- Step 6: Wallpaper Collection ---
+if confirm "Clone and copy wallpapers?"; then
+sudo pacman -S --needed git-lfs
+git lfs install
+mkdir -p "$WALLPAPER_DIR"
+git clone https://github.com/BlackoneBc/walls-catppuccin-mocha.git
+cd walls-catppuccin-mocha
+git lfs pull
+find . -type f \( -name "*.png" -o -name "*.jpg" \) -exec cp {} "$WALLPAPER_DIR/" \;
+cd ..
+rm -rf walls-catppuccin-mocha
+fi
+# --- Step 7: SDDM Theme ---
+if confirm "Install and configure SDDM Silent theme?"; then
+$AUR_HELPER -S --needed sddm-silent-theme
+# Backup existing config
+sudo cp /etc/sddm.conf /etc/sddm.conf.bak 2>/dev/null || true
+# Overwrite with our settings
+sudo tee /etc/sddm.conf > /dev/null << 'EOF'
+[General]
+InputMethod=qtvirtualkeyboard
+GreeterEnvironment=QML2_IMPORT_PATH=/usr/share/sddm/themes/silent/components/,QT_IM_MODULE=qtvirtualkeyboard
+[Theme]
+Current=silent
+EOF
+echo "Test the theme with: cd /usr/share/sddm/themes/silent/ && ./test.sh"
+fi
+# --- Step 8: Flatpak Applications ---
+FLATPAK_APPS=(
+com.brave.Browser
+com.github.IsmaelMartinez.teams_for_linux
+com.heroicgameslauncher.hgl
+com.jeffser.Alpaca
+com.lunarclient.LunarClient
+com.nuclearplayer.Nuclear
+com.rtosta.zapzap
+com.spotify.Client
+com.valvesoftware.Steam
+dev.vencord.Vesktop
+io.github.Geocld.PeaSyo4Desk
+io.github.ecotubehq.player
+io.github.revisto.drum-machine
+io.github.ungoogled_software.ungoogled_chromium
+io.gitlab.adhami3310.Impression
+io.missioncenter.MissionCenter
+org.bluej.BlueJ
+org.gnome.Decibels
+org.gnome.Showtime
+org.gnome.TextEditor
+org.onlyoffice.desktopeditors
+org.prismlauncher.PrismLauncher
+org.videolan.VLC
+)
+if confirm "Install Flatpak applications?"; then
+for app in "${FLATPAK_APPS[@]}"; do
+    flatpak install -y flathub "$app" || echo "Failed to install $app, skipping."
+done
+fi
+# --- Step 9: Spicetify ---
+if confirm "Install Spicetify for Spotify?"; then
+sudo pacman -S --needed unzip
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh -s -- --no-marketplace
+mkdir -p ~/.config/spicetify
+# Determine Spotify flatpak path (user or system)
+SPOTIFY_PATH=$(flatpak info com.spotify.Client --show-location 2>/dev/null || echo "")
+if [[ -z "$SPOTIFY_PATH" ]]; then
+    echo "Spotify flatpak not found. Install it first."
+else
+    SPOTIFY_FILES="$SPOTIFY_PATH/extra/share/spotify"
+    printf "[Settings]\nspotify_path = $SPOTIFY_FILES\nprefs_path = $HOME/.var/app/com.spotify.Client/config/spotify/prefs\n" > ~/.config/spicetify/config-xpui.ini
+    # Grant write permissions only to the current user (safer)
+    sudo chown -R "$USER":"$USER" "$SPOTIFY_FILES"
+    # Apply spicetify
+    ~/.spicetify/spicetify backup apply
+    ~/.spicetify/spicetify apply
+fi
+fi
+echo "All done! Some changes may require a restart or logout."
+
+
+Ja — jetzt verstehe ich, woher dein ursprünglicher Aufbau kommt. Das ist ein „All in one“-Installationsskript, das Noctalia, Labwc, Flatpaks und Spicetify zusammen einrichtet.
+
+Und ich sehe auch, warum dein Spicetify-Teil bei dir grundsätzlich funktioniert hat: Das Skript verwendet genau den Flatpak-Pfad, den Spicetify aktuell dokumentiert.
+
+Für Noctalia würde ich dein Skript aber anpassen. Die aktuelle Noctalia-Dokumentation empfiehlt auf Arch die AUR-Installation und bei Wayland-Compositors den compositor-eigenen Autostart. Für die ältere/v4-Variante ist qs -c noctalia-shell korrekt.
+Für deine aktuelle Installation
+
+Da du offenbar Labwc + Noctalia verwendest, kannst du zunächst einfach testen:
+
+qs -c noctalia-shell
+
+Wenn Noctalia startet, ist die Installation selbst okay.
+
+Danach würde ich deinen Labwc-Autostart nicht mit dem bisherigen Here-Document neu erzeugen, sondern sauber so:
+
+mkdir -p ~/.config/labwc
+
+cat > ~/.config/labwc/autostart <<'EOF'
+#!/bin/sh
+
+# Keyboard layout
+setxkbmap de 2>/dev/null || true
+
+# Noctalia
+qs -c noctalia-shell &
+
+# Displays
+wlr-randr --output DP-1 --auto --pos 1440,560 2>/dev/null || \
+wlr-randr --output HDMI-A-1 --auto --transform 90 --pos 0,0 2>/dev/null
+EOF
+
+chmod +x ~/.config/labwc/autostart
+
+Hier ist absichtlich kein $MONITOR_MAIN drin. In deinem ursprünglichen Skript steht:
+
+cat > ~/.config/labwc/autostart << 'EOF'
+
+und innerhalb des Here-Documents:
+
+wlr-randr --output $MONITOR_MAIN
+
+Durch die einfachen Anführungszeichen bei << 'EOF' wird $MONITOR_MAIN nicht expandiert. Dein Autostart würde also tatsächlich versuchen, ein Output-Gerät namens $MONITOR_MAIN anzusprechen.
+Danach Noctalia starten
+
+qs -c noctalia-shell
+
+Wenn das funktioniert, können wir anschließend deine komplette settings.json aus deinem ersten Beitrag sauber installieren.
+
+Und ich würde dabei deine vorhandene Konfiguration nicht verändern: Catppuccin Mocha, DP-1, Widgets, Dock, Bünde-Wetter, Wallpaper dark-waves.jpg, AudioVisualizer usw. bleiben erhalten.
+
+Noch wichtig: Die aktuelle Noctalia-Doku hat inzwischen auch eine v5-Variante, bei der der Startbefehl noctalia statt qs -c noctalia-shell verwendet wird. Deshalb ist der Test qs -c noctalia-shell bei deiner offenbar v4/AUR-basierten Konfiguration sinnvoll, bevor wir den Autostart festschreiben.
+
+Mach jetzt nur:
+
+qs -c noctalia-shell
+
+Wenn Noctalia erscheint, sag einfach „läuft“ — dann gebe ich dir den korrigierten kompletten settings.json-Block.
