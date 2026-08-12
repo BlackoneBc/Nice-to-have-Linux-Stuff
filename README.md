@@ -25,11 +25,15 @@ Paru
 
     yay -S noctalia-shell
 
-### 5. Display layout, Keyboard Layout and making Noctalia v4 to an auostart Application 
+### 5. Display layout and making Noctalia v4 to an auostart Application 
 
     mkdir -p ~/.config/labwc
-    echo 'setxkbmap de; qs -c noctalia-shell &; wlr-randr --output DP-1 --mode 2560x1440@179.959000 --scale 1 --pos 1440,560 --output HDMI-A-1 --mode 2560x1440@59.951000 --transform 90     --scale 1 --pos 0,0' > ~/.config/labwc/autostart
+    qs -c noctalia-shell &; wlr-randr --output DP-1 --mode 2560x1440@179.959000 --scale 1 --pos 1440,560 --output HDMI-A-1 --mode 2560x1440@59.951000 --transform 90     --scale 1 --pos 0,0' > ~/.config/labwc/autostart;
     chmod +x ~/.config/labwc/autostart
+
+### 5.5. Changing Keyboardlayout to "de"
+
+   mkdir -p ~/.config/labwc && echo -e "XKB_DEFAULT_LAYOUT=de\nXKB_DEFAULT_VARIANT=nodeadkeys" >> ~/.config/labwc/environment
 
 ### 6.  installing a Wallpaper Collection /Dokumente/Wallpaper
 
