@@ -58,7 +58,27 @@ Test before reboot!!!
 
 ### 8. Installing nice to have Flatpak Applications
 
-    flatpak install -y com.brave.Browser com.github.IsmaelMartinez.teams_for_linux com.heroicgameslauncher.hgl com.jeffser.Alpaca com.lunarclient.LunarClient com.nuclearplayer.Nuclear com.rtosta.zapzap com.spotify.Client com.valvesoftware.Steam dev.vencord.Vesktop io.github.Geocld.PeaSyo4Desk io.github.ecotubehq.player io.github.revisto.drum-machine io.github.ungoogled_software.ungoogled_chromium io.gitlab.adhami3310.Impression io.missioncenter.MissionCenter org.bluej.BlueJ org.gnome.Decibels org.gnome.Showtime org.gnome.TextEditor org.onlyoffice.desktopeditors org.prismlauncher.PrismLauncher org.videolan.VLC 
+    flatpak install -y com.brave.Browser
+    com.github.IsmaelMartinez.teams_for_linux 
+    com.heroicgameslauncher.hgl 
+    com.jeffser.Alpaca 
+    com.lunarclient.LunarClient
+    com.nuclearplayer.Nuclear 
+    com.rtosta.zapzap 
+    com.spotify.Client
+    com.valvesoftware.Steam 
+    dev.vencord.Vesktop
+    io.github.Geocld.PeaSyo4Desk
+    io.github.ecotubehq.player
+    io.github.revisto.drum-machine 
+    io.github.ungoogled_software.ungoogled_chromium
+    io.gitlab.adhami3310.Impression 
+    io.missioncenter.MissionCenter 
+    org.bluej.BlueJ org.gnome.Decibels 
+    org.gnome.Showtime org.gnome.TextEditor
+    org.onlyoffice.desktopeditors 
+    org.prismlauncher.PrismLauncher 
+    org.videolan.VLC 
 
 ### 9. Installing Spicetify
 
